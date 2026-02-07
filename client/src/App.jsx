@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
@@ -8,6 +7,8 @@ import PartnerDetails from './pages/PartnerDetails';
 import RoseAnimation from './pages/Animation';
 import SingleMode from './pages/SingleMode';
 import BreakupMode from './pages/BreakupMode';
+import MusicPlayer from './components/MusicPlayer';
+import { MusicProvider } from './context/MusicContext';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -26,19 +27,15 @@ const AnimatedRoutes = () => {
   );
 };
 
-import MusicPlayer from './components/MusicPlayer';
-
-import { MusicProvider } from './context/MusicContext';
-
 function App() {
   return (
     <MusicProvider>
       <Router>
-      <div className="font-sans antialiased text-gray-900">
-        <AnimatedRoutes />
-        <MusicPlayer />
-      </div>
-    </Router>
+        <div className="font-sans antialiased text-gray-900">
+          <AnimatedRoutes />
+          <MusicPlayer />
+        </div>
+      </Router>
     </MusicProvider>
   );
 }

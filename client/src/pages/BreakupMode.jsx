@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Headphones, HeartBroken } from 'lucide-react';
+import { Headphones, HeartCrack } from 'lucide-react';
 import { BackgroundBeamsWithCollision } from '../components/ui/background-beams-with-collision';
 import { useMusic } from '../context/MusicContext';
 
@@ -85,7 +85,7 @@ const BreakupMode = () => {
                         "Every ending is a new beginning. Your heart is resilient, and love will find you again."
                     </p>
                     <div className="mt-8 flex justify-center">
-                        <HeartBroken className="text-rose-500 fill-rose-500 animate-pulse" size={32} />
+                        <HeartCrack className="text-rose-500 fill-rose-500 animate-pulse" size={32} />
                     </div>
                 </motion.div>
             </motion.div>
