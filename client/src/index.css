@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-gray-900 bg-rose-50 transition-colors duration-1000;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-fantasy;
+  }
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.5s ease;
+}
+
+/* Dark Romantic Theme */
+.dark-romantic body {
+  @apply bg-rose-950;
+}
+
+.dark-romantic .glass {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffe4e6; /* rose-100 */
+}
+
+.dark-romantic h1, 
+.dark-romantic h2, 
+.dark-romantic p, 
+.dark-romantic span {
+  text-shadow: 0 0 10px rgba(225, 29, 72, 0.5);
+}
