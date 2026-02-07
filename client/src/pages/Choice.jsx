@@ -125,7 +125,7 @@
                     <div className="flex flex-wrap justify-center gap-8 relative z-10 w-full max-w-6xl">
                         <ChoiceCardWrapper 
                             title="Single" 
-                            icon="💔" 
+                            icon="🥀" 
                             delay={0.2}
                             onClick={() => handleChoice('single')}
                         />
@@ -137,7 +137,7 @@
                         />
                         <ChoiceCardWrapper 
                             title="Breakup" 
-                            icon="🥀" 
+                            icon="💔" 
                             delay={0.6}
                             onClick={() => handleChoice('breakup')}
                         />
