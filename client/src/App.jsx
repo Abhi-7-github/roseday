@@ -30,7 +30,7 @@ const AnimatedRoutes = () => {
 function App() {
   return (
     <MusicProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="font-sans antialiased text-gray-900">
           <AnimatedRoutes />
           <MusicPlayer />
