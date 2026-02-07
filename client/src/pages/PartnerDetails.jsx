@@ -21,6 +21,7 @@ const InputField = ({ label, value, onChange, placeholder }) => {
 };
 
 import { MacbookScroll } from '../components/ui/macbook-scroll';
+import roseBg from '../assets/image.png';
 
 const PartnerDetails = () => {
     const navigate = useNavigate();
@@ -43,7 +44,7 @@ const PartnerDetails = () => {
                         <span className="text-2xl md:text-3xl font-sans text-gray-500 font-normal">Enter your names below</span>
                     </span>
                 }
-                src="/images/rose-bg.jpg" // You might want to add a real image here or leave it empty/default
+                src={roseBg}
                 showGradient={true}
                 badge={
                     <div className="h-10 w-10 transform -rotate-12 bg-rose-500 rounded-full flex items-center justify-center text-white shadow-lg">
