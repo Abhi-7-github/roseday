@@ -8,7 +8,7 @@ const SingleMode = () => {
     const { playTrack, setIsPlaying } = useMusic();
 
     useEffect(() => {
-        playTrack("/forsingle/song.mp3");
+        playTrack(import.meta.env.BASE_URL + "forsingle/song.mp3");
         return () => setIsPlaying(false);
     }, []);
 

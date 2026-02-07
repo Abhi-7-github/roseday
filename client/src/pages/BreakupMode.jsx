@@ -8,7 +8,7 @@ const BreakupMode = () => {
     const { playTrack, setIsPlaying } = useMusic();
 
     useEffect(() => {
-        playTrack("/forbreakup/song.mp3");
+        playTrack(import.meta.env.BASE_URL + "forbreakup/song.mp3");
         return () => setIsPlaying(false);
     }, []);
 

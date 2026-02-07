@@ -31,7 +31,7 @@ const RoseAnimation = () => {
     const { playTrack, setIsPlaying } = useMusic();
 
     useEffect(() => {
-        playTrack('/formingle/song.mp3');
+        playTrack(import.meta.env.BASE_URL + 'formingle/song.mp3');
         if (!location.state) {
              // Optional: Redirect logic if needed
         }
